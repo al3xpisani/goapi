@@ -1,0 +1,44 @@
+POST http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Category 2",
+    "description": "Category2 description"
+} 
+###
+
+GET http://localhost:8080/category/24bceb09-1312-49ec-b5d5-24a4680be7ea HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+###
+
+GET http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+### 
+POST http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Product 3",
+    "description": "Product 3 description",
+    "price": 300,
+    "image_url": "http://www.localhost3",
+    "category_id": "24bceb09-1312-49ec-b5d5-24a4680be7ea"
+} 
+
+### 
+GET http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+### 
+GET http://localhost:8080/product/17fa4152-40a1-48c2-b137-4fcd4a64b904 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+### 
+GET http://localhost:8080/product/category/24bceb09-1312-49ec-b5d5-24a4680be7ea HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json 
