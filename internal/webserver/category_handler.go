@@ -2,7 +2,6 @@ package webserver
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 
 	"github.com/al3xpisani/goapi/internal/entity"
@@ -43,7 +42,6 @@ func (wch *WebCategoryHandler) GetCategory(w http.ResponseWriter, r *http.Reques
 
 func (wch *WebCategoryHandler) CreateCategory(w http.ResponseWriter, r *http.Request) {
 	var category entity.Category
-	fmt.Println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", json.NewDecoder(r.Body).Decode(&category))
 	err := json.NewDecoder(r.Body).Decode(&category)
 	if err == nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)

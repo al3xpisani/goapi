@@ -8,7 +8,7 @@ Content-Type: application/json
 } 
 ###
 
-GET http://localhost:8080/category/24bceb09-1312-49ec-b5d5-24a4680be7ea HTTP/1.1
+GET http://localhost:8080/category/7c0ca0d4-ff23-4bd7-b131-c563067c4b43 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 ###
@@ -35,10 +35,10 @@ GET http://localhost:8080/product HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 ### 
-GET http://localhost:8080/product/17fa4152-40a1-48c2-b137-4fcd4a64b904 HTTP/1.1
+GET http://localhost:8080/product/04c4353a-3f6d-4272-a8f2-44b82c05ecc0 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 ### 
-GET http://localhost:8080/product/category/24bceb09-1312-49ec-b5d5-24a4680be7ea HTTP/1.1
+GET http://localhost:8080/product/category/7c0ca0d4-ff23-4bd7-b131-c563067c4b43 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json 
